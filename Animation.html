@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+
+        @keyframes WheelAnimation {
+
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        @keyframes myAnimation{
+
+
+            0%{
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+
+            /* 50%{ */
+                /* transform: rotate(20deg); */
+                /* margin-left: 600px;
+                margin-top: 250px;
+            } */
+            /* 70%{
+                margin-left: 600px;
+                margin-top: 200px; */
+
+
+            
+
+            
+            100%{
+                margin-left: 80%;
+                margin-top: 470px;
+            }
+
+            
+
+        
+
+
+/* #truck{
+    width: 500px;
+    float:right;    */
+    /* transform: skew(-20deg, 20deg); */
+    /* animation: myAnimation 5s linear 0s; */
+    /* animation-iteration-count: infinite; */
+}
+
+/* #truck:hover{
+    margin-right: 600px;
+
+} */
+
+#fan{
+    animation-name: WheelAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+
+#my-road{
+    width: 100%;
+}
+
+#car-body{
+    width: 300px;
+}
+
+#w1, #w2{
+    width:40px;
+    position: absolute;
+   animation: WheelAnimation 7s linear 0s;
+}
+
+/* @keyframes carAnimation {
+
+from{
+    left:0;
+}
+
+to{
+    left:70%;
+}
+
+} */
+
+#car{
+    position: absolute;
+    top:20%;
+    animation: myAnimation 7s linear 0s;
+    animation-fill-mode: forwards;
+}
+        #w1{
+            left: 49px;
+    top: 69px;
+        }
+
+        #w2{
+            left: 219px;
+    top: 69px;
+        }
+
+
+
+
+/* 2nd anim */
+
+
+
+        
+        @keyframes WheelAnimation2 {
+
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        /* @keyframes myAnimation2{
+
+
+            0%{
+                margin-right: 0px;
+            }
+
+            20%{
+                margin-right: 600px;
+                margin-top:0px;
+            }
+
+            50%{
+                margin-top:500px;
+                margin-right: 600px;
+            }
+
+            70%{
+                margin-top:500px;
+                margin-right: 0px;
+            }
+
+            
+            100%{
+                margin-top:0px;
+                margin-right:0px;
+            }
+
+        } */
+
+/* 
+#truck{
+    width: 500px;
+    float:right;    */
+    /* transform: skew(-20deg, 20deg); */
+    /* animation: myAnimation 5s linear 0s; */
+    /* animation-iteration-count: infinite; */
+
+
+/* #truck:hover{
+    margin-right: 600px;
+
+} */
+
+#fan{
+    animation-name: WheelAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+
+#my-road2{
+    width: 100%;
+}
+
+#car-body2{
+    width: 300px;
+}
+
+#w12, #w22{
+    width:40px;
+    position: absolute;
+   animation: WheelAnimation 10s linear 0s;
+}
+
+@keyframes carAnimation2 {
+
+0%{
+    left:0;
+}
+
+50%{
+    left: 40%;
+}
+60%{
+    left: 40%;
+
+}
+
+100%{
+    left: 70%;
+}
+
+}
+
+#car2{
+    position: absolute;
+    top:70%;
+    animation: carAnimation2 10s ease-in-out 0s;
+    
+    animation-fill-mode: forwards;
+}
+        #w12{
+            left: 49px;
+    top: 69px;
+        }
+
+        #w22{
+            left: 219px;
+    top: 69px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+  
+<img id="my-road" src="road.jfif" alt="">
+
+<div id='car'>
+    <img id='car-body' src="car.png" alt="">
+    <img id='w1' src="wheel.png" alt="">
+    <img id='w2' src="wheel.png" alt="">
+
+</div>
+
+
+<!-- 2nd car -->
+
+<img id="my-road2" src="road.jfif" alt="">
+
+<div id='car2'>
+    <img id='car-body2' src="car.png" alt="">
+    <img id='w12' src="wheel.png" alt="">
+    <img id='w22' src="wheel.png" alt="">
+
+</div>
+
+    <!-- <img id='fan' src="fan.png" alt=""> -->
+
+ <!-- <img id="truck" src="car1.png" alt=""> -->
+
+</body>
+
+</html>
